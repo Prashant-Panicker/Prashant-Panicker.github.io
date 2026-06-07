@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prashant Panicker - Resume Updated V3</title>
+  <style>
+    :root {
+      --ink: #202124;
+      --muted: #4f5661;
+      --rule: #c8ccd2;
+      --accent: #174ea6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #f4f6f8;
+      font: 13px/1.34 Arial, Helvetica, sans-serif;
+    }
+
+    main.resume {
+      width: min(8.5in, calc(100vw - 32px));
+      min-height: 11in;
+      margin: 24px auto;
+      padding: 0.46in 0.55in;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(20, 25, 35, 0.14);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: 26px;
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .contact,
+    .profiles {
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
+    section {
+      margin-top: 10px;
+    }
+
+    h2 {
+      margin: 0 0 5px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid var(--rule);
+      color: var(--accent);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 5px;
+    }
+
+    ul {
+      margin: 4px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin: 2px 0;
+    }
+
+    .item-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      font-weight: 700;
+    }
+
+    .subheading {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 2px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .role {
+      margin-top: 7px;
+    }
+
+    .role:first-of-type {
+      margin-top: 0;
+    }
+
+    .project {
+      margin-top: 4px;
+    }
+
+    .project strong {
+      color: var(--ink);
+    }
+
+    @page {
+      size: Letter;
+      margin: 0.32in;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      main.resume {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      section,
+      .role,
+      .project {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      h2,
+      .subheading,
+      .item-heading {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    <header>
+      <h1>Prashant Panicker</h1>
+      <div class="contact">prashp187@gmail.com | Hyderabad, Telangana</div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>Senior Software Engineer with nearly 4 years of experience building APIs, React and Angular UI features, .NET services, SQL-backed workflows, and batch jobs for enterprise healthcare applications. Experienced in secure database workflows, multi-agent automation, and RAG-based document question answering, with current cloud upskilling in AWS fundamentals.</p>
+    </section>
+
+    <section>
+      <h2>Profiles</h2>
+      <p class="profiles">LinkedIn: linkedin.com/in/prashp187, Github: github.com/Prashant-Panicker, Website: prashant-panicker.github.io</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p><strong>Programming languages:</strong> C#, SQL, JavaScript, TypeScript, Python (basics)</p>
+      <p><strong>Databases:</strong> SQL Server, PostgreSQL</p>
+      <p><strong>Frameworks:</strong> .NET Core, ASP.NET Core Web API, ASP.NET MVC, React, Angular, Flutter (basics)</p>
+      <p><strong>Cloud:</strong> Azure Web Apps, Azure Container Service, Application Insights, AWS fundamentals</p>
+      <p><strong>AI and automation:</strong> text embeddings, RAG, MCP-based tooling, multi-agent workflows</p>
+      <p><strong>Dev tools:</strong> Git, GitHub, Rally (Agile), CI/CD basics</p>
+      <p><strong>Concepts:</strong> REST APIs, Distributed Systems, secure database access</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="item-heading">
+        <span>Optum Global Solutions, UHG | Hyderabad, Telangana</span>
+      </div>
+
+      <div class="role">
+        <div class="subheading">
+          <span>Senior Software Engineer</span>
+          <span>05/2026 - Present</span>
+        </div>
+        <ul>
+          <li>Develop API endpoints and React-based UI features for operational healthcare application workflows.</li>
+          <li>Build and maintain backend services, UI integrations, and database-facing flows with attention to reliability, maintainability, and review-ready delivery.</li>
+          <li>Apply AWS fundamentals and cloud concepts while continuing production delivery across established enterprise application stacks.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="subheading">
+          <span>Software Engineer</span>
+          <span>07/2022 - 04/2026</span>
+        </div>
+        <ul>
+          <li>Developed and deployed Angular, ASP.NET Core Web API, and ASP.NET MVC applications for operational data management workflows.</li>
+          <li>Built and containerized .NET batch jobs, automating data processing workflows and improving repeatability across environments.</li>
+          <li>Managed deployments on Azure Web Apps and Azure Container Service, with Application Insights for monitoring.</li>
+          <li>Enhanced SQL queries and stored procedures to improve data processing efficiency and responsiveness.</li>
+          <li>Built AI-team, a structured multi-agent engineering workspace that coordinates architecture, development, QA, review gates, branch handoffs, and status tracking.</li>
+          <li>Created a basic MCP server enabling AI-assisted database querying, with confirmation safeguards for DDL statements and delete operations before execution.</li>
+          <li>Created a basic RAG system to process PDF documents and answer questions using text embeddings with OpenAI GPT-4o for answer generation.</li>
+          <li>Collaborated in Agile teams using Rally for sprint planning and retrospectives, and participated in code reviews and CI pipelines to maintain quality.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item-heading">
+        <span>Sardar Vallabhbhai National Institute of Technology | Surat, Gujarat</span>
+      </div>
+      <div class="subheading">
+        <span>Computer Engineering</span>
+        <span>05/2022</span>
+      </div>
+      <p>Bachelor of Technology - 8.54 CGPA</p>
+    </section>
+
+    <section>
+      <h2>Accomplishments</h2>
+      <ul>
+        <li>Winner, JPMC Code For Good 2021</li>
+        <li>ACM ICPC 2020</li>
+        <li>Google HashCode (2020) scored points: 920018</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Personal Projects</h2>
+      <p class="project"><strong>AI-Team Engineering Workspace:</strong> Built a multi-agent development workflow for architecture, developer assignment, QA validation, status tracking, and controlled handoffs across implementation stages.</p>
+      <p class="project"><strong>MCP Database Assistant:</strong> Created a basic MCP server that allows AI workflows to connect to databases and run queries, with explicit user-confirmation blocks for DDL statements and delete queries.</p>
+      <p class="project"><strong>PDF RAG Question Answering System:</strong> Created a RAG system to process PDF documents and answer user questions using text embeddings with OpenAI GPT-4o for answer generation.</p>
+      <p class="project"><strong>Stock Market Data Analyzer:</strong> Designed an application using .NET to collect stock market data and implemented algorithms for trend analysis.</p>
+      <p class="project"><strong>Travel Planner Mobile App:</strong> Developed a cross-platform Flutter app to organize travel itineraries, with offline support and cloud synchronization (Deployed on FireBase).</p>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <p>English, Hindi, Malayalam, Gujarati</p>
+    </section>
+  </main>
+</body>
+</html>
