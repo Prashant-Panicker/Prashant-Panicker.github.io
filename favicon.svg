@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Prashant Panicker resume icon">
+  <rect width="64" height="64" rx="10" fill="#184c5a"/>
+  <path d="M18 12h22l8 8v32H18z" fill="#f8faf9"/>
+  <path d="M40 12v10h8z" fill="#d2a36c"/>
+  <path d="M25 31h14M25 38h12M25 45h9" stroke="#8da1a7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M27 24V18h8.5c3.1 0 5.5 2.2 5.5 5s-2.4 5-5.5 5H31v5h-4zm4 0h4.2c1 0 1.8-.7 1.8-1.6s-.8-1.6-1.8-1.6H31z" fill="#184c5a"/>
+</svg>
