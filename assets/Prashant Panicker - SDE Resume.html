@@ -224,11 +224,11 @@
       </article>
 
       <article class="project">
-        <div class="row"><h3>PR Review System - Backend Foundation</h3><span class="link">github.com/Prashant-Panicker/pr-review-system</span></div>
-        <div class="stack">.NET 10, PostgreSQL, pgvector, GitHub Apps, webhooks, GitHub Checks</div>
+        <div class="row"><h3>PR Review Intelligence System</h3><span class="link">github.com/Prashant-Panicker/pr-to-skill</span></div>
+        <div class="stack">Python, Azure OpenAI, OpenSearch Serverless, GitHub webhooks, AWS Lambda, SQS, S3</div>
         <ul>
-          <li>Built the backend foundation for a GitHub App that receives pull-request webhooks, verifies that requests came from GitHub, downloads code changes, and posts check results.</li>
-          <li>Added semantic search over stored code context with PostgreSQL, pgvector, and a fast HNSW index. Kept GitHub, embedding, and LLM services behind interfaces so they can be changed without rewriting the core review logic.</li>
+          <li>Built a RAG-based PR review system that turns historical GitHub comments and diff context into structured review notes, processes large histories in chunks, and produces a reusable SKILL.md.</li>
+          <li>Stored Azure OpenAI embeddings in OpenSearch with HNSW cosine search and retrieved repository-specific evidence for new PRs. API Gateway, Lambda, SQS, DynamoDB, and S3 support secure webhook processing, retries, and saved review artifacts.</li>
         </ul>
       </article>
 
