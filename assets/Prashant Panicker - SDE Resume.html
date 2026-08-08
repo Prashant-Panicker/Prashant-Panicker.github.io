@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prashant Panicker - Software Development Engineer II Resume</title>
+  <style>
+    :root {
+      --ink: #1d2530;
+      --muted: #4b5a6c;
+      --accent: #0d5d91;
+      --rule: #b8c9d8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; padding: 0; }
+
+    body {
+      color: var(--ink);
+      background: #eef2f5;
+      font: 10.7pt/1.26 Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 20px auto;
+      padding: 0.42in 0.47in;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(18, 34, 48, 0.14);
+    }
+
+    header {
+      padding-bottom: 10px;
+      border-bottom: 1.5px solid var(--accent);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      font-size: 25pt;
+      line-height: 1.05;
+    }
+
+    .headline {
+      color: var(--accent);
+      font-size: 12.5pt;
+      font-weight: 700;
+    }
+
+    .contact {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 9.6pt;
+      line-height: 1.4;
+    }
+
+    .contact span:not(:last-child)::after {
+      margin: 0 9px;
+      color: #82909d;
+      content: "|";
+    }
+
+    section { margin-top: 10px; }
+
+    h2 {
+      margin: 0 0 5px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--rule);
+      color: var(--accent);
+      font-size: 13.5pt;
+      line-height: 1.12;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    p { margin: 0; }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 133px 1fr;
+      gap: 2px 0;
+    }
+
+    .skills strong { padding-right: 12px; }
+
+    .job, .project, .education { margin-top: 9px; }
+    .job:first-of-type, .project:first-of-type { margin-top: 0; }
+
+    .row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 11.6pt;
+      line-height: 1.2;
+    }
+
+    .date, .link, .stack, .company, .detail {
+      color: var(--muted);
+      font-size: 9.8pt;
+    }
+
+    .company { margin-top: 1px; font-weight: 700; }
+    .link { white-space: nowrap; }
+    .stack { margin-top: 2px; }
+
+    ul {
+      margin: 5px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 3px 0;
+      padding-left: 1px;
+    }
+
+    .achievement-line {
+      padding: 2px 0 6px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .languages { margin-top: 5px; color: var(--muted); }
+
+    @page { size: Letter; margin: 0; }
+
+    @media print {
+      body { background: #fff; }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+      }
+
+      header, section, .job, .project, .education, li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      h2, h3, .row {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Prashant Panicker</h1>
+      <div class="headline">Software Engineer | .NET | Angular | Azure | SQL | Flutter</div>
+      <div class="contact">
+        <div><span>Hyderabad, Telangana</span><span>panickerp187@gmail.com</span><span>+91 70415 41344</span></div>
+        <div><span>linkedin.com/in/prashp187</span><span>github.com/Prashant-Panicker</span><span>prashant-panicker.github.io</span></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>Software engineer with 4 years of experience building healthcare applications with C#, ASP.NET Core, Angular, React, SQL Server, and Azure. Modernized 5 legacy applications, helped deliver systems used by 1,000+ concurrent users, and improved a 5GB data-processing job to finish in 5 to 10 minutes. Personal projects include Flutter apps, Azure OpenAI features, and semantic search.</p>
+    </section>
+
+    <section>
+      <h2>Core Skills</h2>
+      <div class="skills">
+        <strong>Backend and Data</strong><span>C#, .NET 8-10, ASP.NET Core, REST APIs, EF Core, SQL Server</span>
+        <strong>Web and Mobile</strong><span>Angular, React, TypeScript, Flutter, Dart</span>
+        <strong>Azure and Integration</strong><span>Azure App Service, Azure Container Apps, Azure Service Bus, Application Insights, Azure AD, SignalR, Redis</span>
+        <strong>Delivery and Quality</strong><span>Docker, Terraform, Azure DevOps, GitHub Actions, xUnit</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <article class="job">
+        <div class="row"><h3>Software Engineer II</h3><span class="date">May 2026 - Present</span></div>
+        <div class="company">Optum Global Solutions, UnitedHealth Group | Hyderabad, Telangana</div>
+        <ul>
+          <li>Build and maintain ASP.NET Core APIs and React features for a digital health platform that was load-tested with 5,000 concurrent users.</li>
+          <li>Delivered multi-note pinning, measurement history, and chat updates. Wrote design notes and regression tests and supported production releases.</li>
+          <li>Replaced a custom service-registration setup with built-in .NET dependency injection. Added tests for the database and logging code, making the service easier to maintain.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="row"><h3>Software Engineer I</h3><span class="date">Jul 2022 - Apr 2026</span></div>
+        <div class="company">Optum Global Solutions, UnitedHealth Group | Hyderabad, Telangana</div>
+        <ul>
+          <li>Modernized 5 healthcare applications from legacy .NET and ASP.NET into Angular or React front ends with ASP.NET Core APIs. The applications supported more than 1,000 concurrent internal users.</li>
+          <li>Built API workflows for eligibility, patient and provider search, redirected authorization, retransmit, appeals, and access management.</li>
+          <li>Secured APIs with Azure AD, JWT, and role-based access. Also added health checks and configuration for different deployment environments.</li>
+          <li>Improved a .NET 10 and SQL Server job that processes 5GB provider files. Replaced row-by-row work with chunked loads, staging tables, set-based SQL, parallel steps, and retries. The final job completed in 5 to 10 minutes.</li>
+          <li>Moved manual jobs toward Azure Service Bus messaging and automated deployments with 3 Azure DevOps pipelines and 2 GitHub Actions workflows for Azure App Service and Azure Container Apps.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <main class="page">
+    <section>
+      <h2>Selected Projects</h2>
+      <article class="project">
+        <div class="row"><h3>Escape Now - Travel Booking Platform</h3><span class="link">github.com/Prashant-Panicker/Escapeplatform</span></div>
+        <div class="stack">ASP.NET Core, React, Flutter, SQL Server, SignalR, Redis, Azure, Terraform</div>
+        <ul>
+          <li>Built a travel booking platform with a React website, Flutter mobile app, ASP.NET Core APIs, and SQL Server. It includes destination search, bookings, itineraries, accounts, and JWT login with refresh tokens.</li>
+          <li>Added payment processing, background payment checks, live updates with SignalR, Redis caching, and an Azure OpenAI trip planner.</li>
+          <li>Deployed the API and background worker to Azure Container Apps. Set up Azure SQL, Redis, Blob Storage, Key Vault, Static Web Apps, Application Insights, and Azure OpenAI with Terraform and GitHub Actions.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="row"><h3>Retail Algorithmic Trading Engine</h3><span class="link">github.com/Prashant-Panicker/HFT</span></div>
+        <div class="stack">.NET 10, C#, Zerodha API, WebSockets, PostgreSQL, Terraform, AWS</div>
+        <ul>
+          <li>Built a .NET 10 paper-trading and backtesting engine for Indian equities. It receives live market data from Zerodha, builds price bars, runs a momentum strategy, and exposes admin APIs.</li>
+          <li>Added order risk checks, emergency stop and close-all controls, PostgreSQL storage, restart recovery, and AWS deployment with Terraform and GitHub Actions.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="row"><h3>PR Review System - Backend Foundation</h3><span class="link">github.com/Prashant-Panicker/pr-review-system</span></div>
+        <div class="stack">.NET 10, PostgreSQL, pgvector, GitHub Apps, webhooks, GitHub Checks</div>
+        <ul>
+          <li>Built the backend foundation for a GitHub App that receives pull-request webhooks, verifies that requests came from GitHub, downloads code changes, and posts check results.</li>
+          <li>Added semantic search over stored code context with PostgreSQL, pgvector, and a fast HNSW index. Kept GitHub, embedding, and LLM services behind interfaces so they can be changed without rewriting the core review logic.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="row"><h3>ChapterFlow - Flutter Novel Translator</h3><span class="link">github.com/Prashant-Panicker/chapter-flow</span></div>
+        <div class="stack">Flutter, Dart, InAppWebView, Moonshot API, Hive CE, secure storage</div>
+        <ul>
+          <li>Built a Flutter Android reader for web novels written in other languages. It loads each chapter from the web page and translates the text on the fly with the Moonshot API.</li>
+          <li>Added cancel and retry support, a glossary for consistent names and terms, next-chapter preloading, offline storage for three chapters, secure API-key storage, and an automated GitHub Actions APK build.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="education">
+        <div class="row"><h3>Sardar Vallabhbhai National Institute of Technology, Surat</h3><span class="date">May 2022</span></div>
+        <div class="detail">B.Tech, Computer Engineering | CGPA: 8.54/10</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <p class="achievement-line">Winner, JPMC Code For Good 2021 | ACM ICPC 2020 Participant</p>
+      <p class="languages">Languages: English, Hindi, Malayalam, Gujarati</p>
+    </section>
+  </main>
+</body>
+</html>
