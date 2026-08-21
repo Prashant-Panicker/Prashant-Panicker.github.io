@@ -215,11 +215,11 @@
       </article>
 
       <article class="project">
-        <div class="row"><h3>Retail Algorithmic Trading Engine</h3><span class="link">github.com/Prashant-Panicker/HFT</span></div>
-        <div class="stack">.NET 10, C#, Zerodha API, WebSockets, PostgreSQL, Terraform, AWS</div>
+        <div class="row"><h3>Low Latency Trading Engine</h3><span class="link">github.com/Prashant-Panicker/low-latency-trading-engine</span></div>
+        <div class="stack">.NET 10, C#, Zerodha API, live market data, PostgreSQL, Terraform, AWS</div>
         <ul>
-          <li>Built a .NET 10 paper-trading and backtesting engine for Indian equities. It receives live market data from Zerodha, builds price bars, runs a momentum strategy, and exposes admin APIs.</li>
-          <li>Added order risk checks, emergency stop and close-all controls, PostgreSQL storage, restart recovery, and AWS deployment with Terraform and GitHub Actions.</li>
+          <li>Built a .NET 10 retail trading engine that streams Zerodha ticks, builds and persists price bars, and runs assigned strategies across live, paper, and backtest workflows.</li>
+          <li>Added broker-side protective stops, daily-loss and emergency controls, fill-level P&amp;L, PostgreSQL-backed restart reconciliation, and an EC2 deployment path with Terraform and GitHub Actions.</li>
         </ul>
       </article>
 
