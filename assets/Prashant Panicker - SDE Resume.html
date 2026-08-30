@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prashant Panicker - Software Development Engineer II Resume</title>
+  <title>Prashant Panicker - Software Engineer Resume</title>
   <style>
     :root {
       --ink: #1d2530;
@@ -162,7 +162,7 @@
 
     <section>
       <h2>Summary</h2>
-      <p>Software engineer with 4 years of experience building healthcare applications with C#, ASP.NET Core, Angular, React, SQL Server, and Azure. Modernized 5 legacy applications, helped deliver systems used by 1,000+ concurrent users, and improved a 5GB data-processing job to finish in 5 to 10 minutes. Personal projects include Flutter apps, Azure OpenAI features, and semantic search.</p>
+      <p>Software engineer with 4 years of experience building healthcare applications with C#, ASP.NET Core, Angular, React, SQL Server, Azure, and AWS. Work includes event-driven services, legacy modernization, and data pipelines that process multi-gigabyte files. Personal projects include Flutter apps, Azure OpenAI features, and semantic search.</p>
     </section>
 
     <section>
@@ -170,7 +170,7 @@
       <div class="skills">
         <strong>Backend and Data</strong><span>C#, .NET 8-10, ASP.NET Core, REST APIs, EF Core, SQL Server</span>
         <strong>Web and Mobile</strong><span>Angular, React, TypeScript, Flutter, Dart</span>
-        <strong>Azure and Integration</strong><span>Azure App Service, Azure Container Apps, Azure Service Bus, Application Insights, Azure AD, SignalR, Redis</span>
+        <strong>Cloud and Integration</strong><span>Azure App Service, Azure Container Apps, AWS, Azure Service Bus, Application Insights, Azure AD, SignalR, Redis</span>
         <strong>Delivery and Quality</strong><span>Docker, Terraform, Azure DevOps, GitHub Actions, xUnit</span>
       </div>
     </section>
@@ -178,24 +178,32 @@
     <section>
       <h2>Experience</h2>
       <article class="job">
-        <div class="row"><h3>Software Engineer II</h3><span class="date">May 2026 - Present</span></div>
+        <div class="row"><h3>Software Engineer</h3><span class="date">May 2026 - Present</span></div>
         <div class="company">Optum Global Solutions, UnitedHealth Group | Hyderabad, Telangana</div>
         <ul>
-          <li>Build and maintain ASP.NET Core APIs and React features for a digital health platform serving 5,000 concurrent users.</li>
-          <li>Delivered multi-note pinning, measurement history, and chat updates. Wrote design notes and regression tests and supported production releases.</li>
-          <li>Replaced a custom service-registration setup with built-in .NET dependency injection. Added tests for the database and logging code, making the service easier to maintain.</li>
+          <li>Build features for an event-driven healthcare platform with a React portal, ASP.NET Core APIs, asynchronous workers, and AWS services.</li>
+          <li>Own features across the stack, from technical analysis and React changes to backend APIs, worker processing, validation, and release support.</li>
+          <li>Design workflows that move longer-running work out of interactive API requests, and write xUnit tests for API, service, and worker behaviour, including failure cases.</li>
         </ul>
       </article>
 
       <article class="job">
-        <div class="row"><h3>Software Engineer I</h3><span class="date">Jul 2022 - Apr 2026</span></div>
+        <div class="row"><h3>Software Engineer</h3><span class="date">Jul 2023 - May 2026</span></div>
         <div class="company">Optum Global Solutions, UnitedHealth Group | Hyderabad, Telangana</div>
         <ul>
           <li>Modernized 5 healthcare applications from legacy .NET and ASP.NET into Angular or React front ends with ASP.NET Core APIs. The applications supported more than 1,000 concurrent internal users.</li>
-          <li>Built API workflows for eligibility, patient and provider search, redirected authorization, retransmit, appeals, and access management.</li>
-          <li>Secured APIs with Azure AD, JWT, and role-based access. Also added health checks and configuration for different deployment environments.</li>
           <li>Improved a .NET 10 and SQL Server job that processes 5GB provider files. Replaced row-by-row work with chunked loads, staging tables, set-based SQL, parallel steps, and retries. The final job completed in 5 to 10 minutes.</li>
-          <li>Moved manual jobs toward Azure Service Bus messaging and automated deployments with 3 Azure DevOps pipelines and 2 GitHub Actions workflows for Azure App Service and Azure Container Apps.</li>
+          <li>Built ASP.NET Core APIs and React features for a digital health platform serving approximately 5,000 users.</li>
+          <li>Secured APIs with Azure AD, JWT, and role-based authorization, and automated delivery with 3 Azure DevOps pipelines and 2 GitHub Actions workflows.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="row"><h3>TDP - Software Engineer</h3><span class="date">Jul 2022 - Jul 2023</span></div>
+        <div class="company">Optum Global Solutions, UnitedHealth Group | Hyderabad, Telangana</div>
+        <ul>
+          <li>Investigated and resolved defects, support tickets, and functional issues while learning the platform's architecture and healthcare workflows.</li>
+          <li>Supported production incidents by analysing logs and finding root causes, and improved existing services for better reliability and maintainability.</li>
         </ul>
       </article>
     </section>
