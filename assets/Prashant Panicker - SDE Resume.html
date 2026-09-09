@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prashant Panicker - Software Engineer Resume</title>
+  <title>Prashant Panicker | Software Engineer Resume</title>
   <style>
     :root {
       --ink: #1d2530;
@@ -79,7 +79,7 @@
 
     .skills {
       display: grid;
-      grid-template-columns: 133px 1fr;
+      grid-template-columns: 155px 1fr;
       gap: 2px 0;
     }
 
@@ -108,6 +108,10 @@
 
     .company { margin-top: 1px; font-weight: 700; }
     .link { white-space: nowrap; }
+    .date { white-space: nowrap; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .more-projects { margin-top: 5px; }
     .stack { margin-top: 2px; }
 
     ul {
@@ -127,17 +131,23 @@
 
     .languages { margin-top: 5px; color: var(--muted); }
 
-    @page { size: Letter; margin: 0; }
+    @page { size: Letter; margin: 0.42in 0.47in; }
 
     @media print {
       body { background: #fff; }
 
       .page {
+        width: 7.56in;
+        min-height: 0;
         margin: 0;
+        padding: 0;
         box-shadow: none;
+        break-after: page;
       }
 
-      header, section, .job, .project, .education, li {
+      .page:last-child { break-after: auto; }
+
+      header, .job, .project, .education, li {
         break-inside: avoid;
         page-break-inside: avoid;
       }
@@ -150,128 +160,131 @@
   </style>
 </head>
 <body>
-  <main class="page">
-    <header>
-      <h1>Prashant Panicker</h1>
-      <div class="headline">Software Engineer | .NET | Angular | Azure | SQL | Flutter</div>
-      <div class="contact">
-        <div><span>Hyderabad, Telangana</span><span>panickerp187@gmail.com</span><span>+91 70415 41344</span></div>
-        <div><span>linkedin.com/in/prashp187</span><span>github.com/Prashant-Panicker</span><span>prashant-panicker.github.io</span></div>
-      </div>
-    </header>
+  <main>
+    <div class="page">
+      <header>
+        <h1>Prashant Panicker</h1>
+        <div class="headline">Software Engineer | C# | .NET | React | AWS | Azure</div>
+        <div class="contact">
+          <div><span>Hyderabad, India</span><span><a href="mailto:panickerp187@gmail.com">panickerp187@gmail.com</a></span><span><a href="tel:+917041541344">+91 70415 41344</a></span></div>
+          <div><span><a href="https://linkedin.com/in/prashp187">linkedin.com/in/prashp187</a></span><span><a href="https://github.com/Prashant-Panicker">github.com/Prashant-Panicker</a></span><span><a href="https://prashant-panicker.github.io">prashant-panicker.github.io</a></span></div>
+        </div>
+      </header>
 
-    <section>
-      <h2>Summary</h2>
-      <p>Software engineer with 4 years of experience building healthcare applications with C#, ASP.NET Core, Angular, React, SQL Server, Azure, and AWS. Work includes event-driven services, legacy modernization, and data pipelines that process multi-gigabyte files. Personal projects include Flutter apps, Azure OpenAI features, and semantic search.</p>
-    </section>
+      <section>
+        <h2>Summary</h2>
+        <p>Software engineer with 4 years of experience building healthcare applications with C#, ASP.NET Core, React, Angular, SQL Server, AWS, and Azure. Work includes event driven architecture, background processing, and modernizing legacy applications. Improved a provider data pipeline to process 5GB files in 5 to 10 minutes.</p>
+      </section>
 
-    <section>
-      <h2>Core Skills</h2>
-      <div class="skills">
-        <strong>Backend and Data</strong><span>C#, .NET 8-10, ASP.NET Core, REST APIs, EF Core, SQL Server</span>
-        <strong>Web and Mobile</strong><span>Angular, React, TypeScript, Flutter, Dart</span>
-        <strong>Cloud and Integration</strong><span>Azure App Service, Azure Container Apps, AWS, Azure Service Bus, Application Insights, Azure AD, SignalR, Redis</span>
-        <strong>Delivery and Quality</strong><span>Docker, Terraform, Azure DevOps, GitHub Actions, xUnit</span>
-      </div>
-    </section>
+      <section>
+        <h2>Core Skills</h2>
+        <div class="skills">
+          <strong>Backend and Data</strong><span>C#, .NET 8 to 10, ASP.NET Core, REST APIs, EF Core, SQL Server, PostgreSQL</span>
+          <strong>Web and Mobile</strong><span>React, Angular, TypeScript, Flutter, Dart</span>
+          <strong>Cloud and Integration</strong><span>AWS, Azure App Service, Azure Container Apps, Azure Service Bus, Application Insights, Azure AD, JWT, SignalR, Redis</span>
+          <strong>Delivery and Testing</strong><span>Git, Docker, Terraform, CI/CD, Azure DevOps, GitHub Actions, xUnit</span>
+          <strong>AI Projects</strong><span>Python, Azure OpenAI, RAG, OpenSearch, Embeddings, MCP</span>
+        </div>
+      </section>
 
-    <section>
-      <h2>Experience</h2>
-      <article class="job">
-        <div class="row"><h3>Software Engineer</h3><span class="date">May 2026 - Present</span></div>
-        <div class="company">Optum Global Solutions, UnitedHealth Group | Hyderabad, Telangana</div>
+      <section>
+        <h2>Experience</h2>
+        <article class="job">
+          <div class="row"><h3>Software Engineer</h3><span class="date">May 2026 to Present</span></div>
+          <div class="company">Optum Global Solutions | Hyderabad, India</div>
+          <ul>
+            <li>Build features for a healthcare platform using a React portal, ASP.NET Core APIs, background workers, and AWS services.</li>
+            <li>Handle features from technical analysis through UI and API changes, worker processing, testing, and release support.</li>
+            <li>Move longer tasks to background workers to keep API requests responsive.</li>
+            <li>Write xUnit tests for APIs, services, and workers, including edge cases and failures.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="row"><h3>Software Engineer</h3><span class="date">Jul 2023 to May 2026</span></div>
+          <div class="company">Optum Global Solutions | Hyderabad, India</div>
+          <ul>
+            <li>Modernized 5 healthcare applications from legacy .NET and ASP.NET to Angular or React with ASP.NET Core APIs, supporting more than 1,000 concurrent internal users.</li>
+            <li>Improved a .NET 10 and SQL Server job to process 5GB provider files in 5 to 10 minutes using chunked loads, staging tables, set based SQL, parallel steps, and retries.</li>
+            <li>Built ASP.NET Core APIs and React features for a digital health platform serving approximately 5,000 users.</li>
+            <li>Secured APIs with Azure AD, JWT, and role based authorization.</li>
+            <li>Automated delivery with 3 Azure DevOps pipelines and 2 GitHub Actions workflows.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="row"><h3>Software Engineer (Technology Development Program)</h3><span class="date">Jul 2022 to Jul 2023</span></div>
+          <div class="company">Optum Global Solutions | Hyderabad, India</div>
+          <ul>
+            <li>Resolved defects and support tickets across healthcare applications during the Technology Development Program.</li>
+            <li>Investigated production incidents through logs, identified root causes, and worked with the team on fixes.</li>
+            <li>Updated existing services to improve reliability and make the code easier to maintain.</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+
+    <div class="page">
+      <section>
+        <h2>Selected Projects</h2>
+        <article class="project">
+          <div class="row"><h3>Low Latency Trading Engine</h3><a class="link" href="https://github.com/Prashant-Panicker/low-latency-trading-engine">GitHub repository</a></div>
+          <div class="stack">C#, .NET 10, PostgreSQL, Zerodha API, React, AWS, Terraform</div>
+          <ul>
+            <li>Built a .NET 10 retail trading engine that streams Zerodha market data, stores price bars, and runs configurable strategies for Indian cash equities.</li>
+            <li>Added protective stops, daily loss limits, stale data checks, and emergency controls before order execution.</li>
+            <li>Persisted orders, fills, positions, and P&amp;L in PostgreSQL and reconciled broker state after restarts.</li>
+            <li>Added paper trading and backtest workflows, plus an EC2 deployment path using Terraform and GitHub Actions.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="row"><h3>PR Review Intelligence System</h3><a class="link" href="https://github.com/Prashant-Panicker/pr-to-skill">GitHub repository</a></div>
+          <div class="stack">Python, Azure OpenAI, OpenSearch Serverless, AWS Lambda, SQS, DynamoDB, S3</div>
+          <ul>
+            <li>Built a Python pipeline that turns trusted feedback from merged GitHub pull requests into review notes and reusable SKILL.md guidance.</li>
+            <li>Checked requested changes against merged code and replaced guidance when later changes made it outdated.</li>
+            <li>Retrieved relevant history with Azure OpenAI embeddings and OpenSearch, then fetched limited file context from the exact commit being reviewed.</li>
+            <li>Processed signed webhooks with Lambda and SQS, using DynamoDB tracking to prevent duplicate reviews and S3 to store results.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="row"><h3>Escape Now</h3><span class="link">Private source</span></div>
+          <div class="stack">ASP.NET Core, React, Flutter, SQL Server, SignalR, Redis, Azure, Terraform</div>
+          <ul>
+            <li>Built React and Flutter clients that share .NET 10 APIs for destination search, bookings, payments, accounts, chat, and notifications.</li>
+            <li>Added JWT authentication with refresh token rotation and HttpOnly refresh cookies for the web client.</li>
+            <li>Handled payment notifications through SQL outbox workers with leases and retries, and added SignalR updates with Redis.</li>
+            <li>Defined Azure Container Apps, Azure SQL, Blob Storage, and related services in Terraform with GitHub Actions deployment workflows.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>More Projects</h2>
         <ul>
-          <li>Build features for an event-driven healthcare platform with a React portal, ASP.NET Core APIs, asynchronous workers, and AWS services.</li>
-          <li>Own features across the stack, from technical analysis and React changes to backend APIs, worker processing, validation, and release support.</li>
-          <li>Design workflows that move longer-running work out of interactive API requests, and write xUnit tests for API, service, and worker behaviour, including failure cases.</li>
+          <li><strong>Document and Website RAG System:</strong> A Python backend that answers questions about PDFs and websites with source citations.</li>
+          <li><strong>ChapterFlow:</strong> An Android reader with web novel translation, offline chapters, and background preloading.</li>
+          <li><strong>Skill Guided Coding Agent:</strong> A Python coding assistant with repository search, tool execution, and recoverable edits.</li>
         </ul>
-      </article>
+        <p class="detail more-projects">Details: <a href="https://prashant-panicker.github.io/portfolio">prashant-panicker.github.io/portfolio</a></p>
+      </section>
 
-      <article class="job">
-        <div class="row"><h3>Software Engineer</h3><span class="date">Jul 2023 - May 2026</span></div>
-        <div class="company">Optum Global Solutions, UnitedHealth Group | Hyderabad, Telangana</div>
-        <ul>
-          <li>Modernized 5 healthcare applications from legacy .NET and ASP.NET into Angular or React front ends with ASP.NET Core APIs. The applications supported more than 1,000 concurrent internal users.</li>
-          <li>Improved a .NET 10 and SQL Server job that processes 5GB provider files. Replaced row-by-row work with chunked loads, staging tables, set-based SQL, parallel steps, and retries. The final job completed in 5 to 10 minutes.</li>
-          <li>Built ASP.NET Core APIs and React features for a digital health platform serving approximately 5,000 users.</li>
-          <li>Secured APIs with Azure AD, JWT, and role-based authorization, and automated delivery with 3 Azure DevOps pipelines and 2 GitHub Actions workflows.</li>
-        </ul>
-      </article>
+      <section>
+        <h2>Education</h2>
+        <div class="education">
+          <h3>Sardar Vallabhbhai National Institute of Technology, Surat</h3>
+          <div class="detail">B.Tech, Computer Engineering | CGPA: 8.54/10 | 2018 to 2022 | May 2022</div>
+        </div>
+      </section>
 
-      <article class="job">
-        <div class="row"><h3>TDP - Software Engineer</h3><span class="date">Jul 2022 - Jul 2023</span></div>
-        <div class="company">Optum Global Solutions, UnitedHealth Group | Hyderabad, Telangana</div>
-        <ul>
-          <li>Investigated and resolved defects, support tickets, and functional issues while learning the platform's architecture and healthcare workflows.</li>
-          <li>Supported production incidents by analysing logs and finding root causes, and improved existing services for better reliability and maintainability.</li>
-        </ul>
-      </article>
-    </section>
-  </main>
-
-  <main class="page">
-    <section>
-      <h2>Selected Projects</h2>
-      <article class="project">
-        <div class="row"><h3>Escape Now - Travel Booking Platform</h3><span class="link">github.com/Prashant-Panicker/Escapeplatform</span></div>
-        <div class="stack">ASP.NET Core, React, Flutter, SQL Server, SignalR, Redis, Azure, Terraform</div>
-        <ul>
-          <li>Built a travel booking platform with a React website, Flutter mobile app, ASP.NET Core APIs, and SQL Server. It includes destination search, bookings, itineraries, accounts, and JWT login with refresh tokens.</li>
-          <li>Added payment processing, background payment checks, live updates with SignalR, Redis caching, and an Azure OpenAI trip planner.</li>
-          <li>Deployed the API and background worker to Azure Container Apps. Set up Azure SQL, Redis, Blob Storage, Key Vault, Static Web Apps, Application Insights, and Azure OpenAI with Terraform and GitHub Actions.</li>
-        </ul>
-      </article>
-
-      <article class="project">
-        <div class="row"><h3>Low Latency Trading Engine</h3><span class="link">github.com/Prashant-Panicker/low-latency-trading-engine</span></div>
-        <div class="stack">.NET 10, C#, Zerodha API, live market data, PostgreSQL, Terraform, AWS</div>
-        <ul>
-          <li>Built a .NET 10 retail trading engine that streams Zerodha ticks, builds and persists price bars, and runs assigned strategies across live, paper, and backtest workflows.</li>
-          <li>Added broker-side protective stops, daily-loss and emergency controls, fill-level P&amp;L, PostgreSQL-backed restart reconciliation, and an EC2 deployment path with Terraform and GitHub Actions.</li>
-        </ul>
-      </article>
-
-      <article class="project">
-        <div class="row"><h3>PR Review Intelligence System</h3><span class="link">github.com/Prashant-Panicker/pr-to-skill</span></div>
-        <div class="stack">Python, Azure OpenAI, OpenSearch Serverless, GitHub webhooks, AWS Lambda, SQS, S3</div>
-        <ul>
-          <li>Built a RAG-based PR review system that turns historical GitHub comments and diff context into structured review notes, processes large histories in chunks, and produces a reusable SKILL.md.</li>
-          <li>Stored Azure OpenAI embeddings in OpenSearch with HNSW cosine search and retrieved repository-specific evidence for new PRs. API Gateway, Lambda, SQS, DynamoDB, and S3 support secure webhook processing, retries, and saved review artifacts.</li>
-        </ul>
-      </article>
-
-      <article class="project">
-        <div class="row"><h3>ChapterFlow - Flutter Novel Translator</h3><span class="link">github.com/Prashant-Panicker/chapter-flow</span></div>
-        <div class="stack">Flutter, Dart, InAppWebView, Moonshot API, Hive CE, secure storage</div>
-        <ul>
-          <li>Built a Flutter Android reader for web novels written in other languages. It loads each chapter from the web page and translates the text on the fly with the Moonshot API.</li>
-          <li>Added cancel and retry support, a glossary for consistent names and terms, next-chapter preloading, offline storage for three chapters, secure API-key storage, and an automated GitHub Actions APK build.</li>
-        </ul>
-      </article>
-
-      <article class="project">
-        <div class="row"><h3>Skill-Guided Coding Agent</h3><span class="link">github.com/Prashant-Panicker/skill-based-coding-agent</span></div>
-        <div class="stack">Python, Azure OpenAI, Git, GitHub CLI, Playwright MCP, embeddings</div>
-        <ul>
-          <li>Built a command-line coding agent that repeatedly inspects a repository, edits code, runs tests and builds, reviews its changes, and continues until the requested task is complete.</li>
-          <li>Added repository maps, cached semantic search, context trimming, skill loading, safe multi-file edits, restore checkpoints, GitHub pull-request tools, and Playwright-based UI validation.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <div class="education">
-        <div class="row"><h3>Sardar Vallabhbhai National Institute of Technology, Surat</h3><span class="date">May 2022</span></div>
-        <div class="detail">B.Tech, Computer Engineering | CGPA: 8.54/10</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Achievements</h2>
-      <p class="achievement-line">Winner, JPMC Code For Good 2021 | ACM ICPC 2020 Participant</p>
-      <p class="languages">Languages: English, Hindi, Malayalam, Gujarati</p>
-    </section>
+      <section>
+        <h2>Achievements</h2>
+        <p class="achievement-line">Winner, JPMC Code For Good 2021 | ACM ICPC 2020 Participant</p>
+        <p class="languages">Languages: English, Hindi, Gujarati, Malayalam</p>
+      </section>
+    </div>
   </main>
 </body>
 </html>
