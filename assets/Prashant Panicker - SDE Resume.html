@@ -137,6 +137,7 @@
       body { background: #fff; }
 
       .page {
+        display: flow-root;
         width: 7.56in;
         min-height: 0;
         margin: 0;
@@ -164,7 +165,7 @@
     <div class="page">
       <header>
         <h1>Prashant Panicker</h1>
-        <div class="headline">Software Engineer | C# | .NET | React | AWS | Azure</div>
+        <div class="headline">Software Engineer | .NET | Angular | SQL Server | Azure</div>
         <div class="contact">
           <div><span>Hyderabad, India</span><span><a href="mailto:panickerp187@gmail.com">panickerp187@gmail.com</a></span><span><a href="tel:+917041541344">+91 70415 41344</a></span></div>
           <div><span><a href="https://linkedin.com/in/prashp187">linkedin.com/in/prashp187</a></span><span><a href="https://github.com/Prashant-Panicker">github.com/Prashant-Panicker</a></span><span><a href="https://prashant-panicker.github.io">prashant-panicker.github.io</a></span></div>
@@ -173,17 +174,14 @@
 
       <section>
         <h2>Summary</h2>
-        <p>Software engineer with 4 years of experience building healthcare applications with C#, ASP.NET Core, React, Angular, SQL Server, AWS, and Azure. Work includes event driven architecture, background processing, and modernizing legacy applications. Improved a provider data pipeline to process 5GB files in 5 to 10 minutes.</p>
+        <p>Software engineer with 4 years of experience building healthcare applications with C#, ASP.NET Core, Angular, SQL Server and Azure. Work includes APIs, background jobs and legacy modernization. Improved a provider data pipeline to process 5GB files in 5 to 10 minutes.</p>
       </section>
 
       <section>
-        <h2>Core Skills</h2>
+        <h2>Skills</h2>
         <div class="skills">
-          <strong>Backend and Data</strong><span>C#, .NET 8 to 10, ASP.NET Core, REST APIs, EF Core, SQL Server, PostgreSQL</span>
-          <strong>Web and Mobile</strong><span>React, Angular, TypeScript, Flutter, Dart</span>
-          <strong>Cloud and Integration</strong><span>AWS, Azure App Service, Azure Container Apps, Azure Service Bus, Application Insights, Azure AD, JWT, SignalR, Redis</span>
-          <strong>Delivery and Testing</strong><span>Git, Docker, Terraform, CI/CD, Azure DevOps, GitHub Actions, xUnit</span>
-          <strong>AI Projects</strong><span>Python, Azure OpenAI, RAG, OpenSearch, Embeddings, MCP</span>
+          <strong>Core Skills</strong><span>C#, .NET, ASP.NET Core, Angular, SQL Server, REST APIs, EF Core, Azure Container Instances (ACI), Blob Storage, Storage Queues, Service Bus, Event Hubs, xUnit, CI/CD, Azure DevOps, GitHub Actions</span>
+          <strong>Familiar With</strong><span>React, Python, AWS, PostgreSQL, Docker, Terraform, Azure AI Search, Azure AI Foundry, RAG</span>
         </div>
       </section>
 
@@ -204,11 +202,11 @@
           <div class="row"><h3>Software Engineer</h3><span class="date">Jul 2023 to May 2026</span></div>
           <div class="company">Optum Global Solutions | Hyderabad, India</div>
           <ul>
-            <li>Modernized 5 healthcare applications from legacy .NET and ASP.NET to Angular or React with ASP.NET Core APIs, supporting more than 1,000 concurrent internal users.</li>
-            <li>Improved a .NET 10 and SQL Server job to process 5GB provider files in 5 to 10 minutes using chunked loads, staging tables, set based SQL, parallel steps, and retries.</li>
+            <li>Modernized 5 healthcare applications with ASP.NET Core APIs and Angular or React interfaces, supporting more than 1,000 concurrent internal users.</li>
+            <li>Improved a .NET 10 and SQL Server job to process 5GB provider files in 5 to 10 minutes using chunked loads, staging tables, set based SQL, parallel steps and retries.</li>
             <li>Built ASP.NET Core APIs and React features for a digital health platform serving approximately 5,000 users.</li>
-            <li>Secured APIs with Azure AD, JWT, and role based authorization.</li>
-            <li>Automated delivery with 3 Azure DevOps pipelines and 2 GitHub Actions workflows.</li>
+            <li>Used Azure Storage Queues for ETL task messages and Service Bus queues for communication between APIs and background services, with SQL Server hosted on Azure.</li>
+            <li>Secured APIs with Azure AD, JWT and role based authorization. Automated delivery with 3 Azure DevOps pipelines and 2 GitHub Actions workflows.</li>
           </ul>
         </article>
 
@@ -226,15 +224,26 @@
 
     <div class="page">
       <section>
-        <h2>Selected Projects</h2>
+        <h2>Personal Projects</h2>
         <article class="project">
           <div class="row"><h3>Low Latency Trading Engine</h3><a class="link" href="https://github.com/Prashant-Panicker/low-latency-trading-engine">GitHub repository</a></div>
-          <div class="stack">C#, .NET 10, PostgreSQL, Zerodha API, React, AWS, Terraform</div>
+          <div class="stack">C#, .NET 10, ASP.NET Core, PostgreSQL, EF Core, xUnit, React, AWS</div>
           <ul>
-            <li>Built a .NET 10 retail trading engine that streams Zerodha market data, stores price bars, and runs configurable strategies for Indian cash equities.</li>
-            <li>Added protective stops, daily loss limits, stale data checks, and emergency controls before order execution.</li>
-            <li>Persisted orders, fills, positions, and P&amp;L in PostgreSQL and reconciled broker state after restarts.</li>
-            <li>Added paper trading and backtest workflows, plus an EC2 deployment path using Terraform and GitHub Actions.</li>
+            <li>Built a .NET 10 trading engine with separate modules for market data, strategies, risk checks and order management, plus an admin API.</li>
+            <li>Persisted orders, fills and positions in PostgreSQL with EF Core migrations, and reconciled broker state after restarts.</li>
+            <li>Added order rate limits, protective stops and stale data checks, with xUnit tests for concurrent submissions and failure handling.</li>
+            <li>Exposed runtime status and operator audit history through the admin API, and added paper trading and backtest workflows.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="row"><h3>Escape Now</h3><span class="link">Private source</span></div>
+          <div class="stack">ASP.NET Core, React, Flutter, SQL Server, SignalR, Redis, Azure, Terraform</div>
+          <ul>
+            <li>Built shared ASP.NET Core APIs for bookings, payments, accounts and notifications, used by React and Flutter clients.</li>
+            <li>Added JWT authentication with refresh token rotation and HttpOnly refresh cookies for the web client.</li>
+            <li>Processed payment notifications through SQL outbox workers with leases, retries and failure logging; used SignalR with Redis for live updates.</li>
+            <li>Defined Azure Container Apps, Azure SQL and Blob Storage in Terraform, with GitHub Actions deployment workflows.</li>
           </ul>
         </article>
 
@@ -243,20 +252,9 @@
           <div class="stack">Python, Azure OpenAI, OpenSearch Serverless, AWS Lambda, SQS, DynamoDB, S3</div>
           <ul>
             <li>Built a Python pipeline that turns trusted feedback from merged GitHub pull requests into review notes and reusable SKILL.md guidance.</li>
-            <li>Checked requested changes against merged code and replaced guidance when later changes made it outdated.</li>
-            <li>Retrieved relevant history with Azure OpenAI embeddings and OpenSearch, then fetched limited file context from the exact commit being reviewed.</li>
-            <li>Processed signed webhooks with Lambda and SQS, using DynamoDB tracking to prevent duplicate reviews and S3 to store results.</li>
-          </ul>
-        </article>
-
-        <article class="project">
-          <div class="row"><h3>Escape Now</h3><span class="link">Private source</span></div>
-          <div class="stack">ASP.NET Core, React, Flutter, SQL Server, SignalR, Redis, Azure, Terraform</div>
-          <ul>
-            <li>Built React and Flutter clients that share .NET 10 APIs for destination search, bookings, payments, accounts, chat, and notifications.</li>
-            <li>Added JWT authentication with refresh token rotation and HttpOnly refresh cookies for the web client.</li>
-            <li>Handled payment notifications through SQL outbox workers with leases and retries, and added SignalR updates with Redis.</li>
-            <li>Defined Azure Container Apps, Azure SQL, Blob Storage, and related services in Terraform with GitHub Actions deployment workflows.</li>
+            <li>Separated webhook handling from review and history processing with Lambda and SQS, including retries and dead letter queues.</li>
+            <li>Used DynamoDB delivery tracking and review markers to prevent duplicate reviews when messages were retried.</li>
+            <li>Retrieved accepted review feedback with Azure OpenAI embeddings and OpenSearch, then fetched file context from the exact commit under review.</li>
           </ul>
         </article>
       </section>
@@ -264,9 +262,9 @@
       <section>
         <h2>More Projects</h2>
         <ul>
-          <li><strong>Document and Website RAG System:</strong> A Python backend that answers questions about PDFs and websites with source citations.</li>
-          <li><strong>ChapterFlow:</strong> An Android reader with web novel translation, offline chapters, and background preloading.</li>
-          <li><strong>Skill Guided Coding Agent:</strong> A Python coding assistant with repository search, tool execution, and recoverable edits.</li>
+          <li><strong>Document and Website RAG System:</strong> A Python backend for PDF and website Q&amp;A with source citations.</li>
+          <li><strong>ChapterFlow:</strong> A Flutter web novel reader with translation and offline chapters.</li>
+          <li><strong>Skill Guided Coding Agent:</strong> A Python coding assistant with repository search and recoverable edits.</li>
         </ul>
         <p class="detail more-projects">Details: <a href="https://prashant-panicker.github.io/portfolio">prashant-panicker.github.io/portfolio</a></p>
       </section>
