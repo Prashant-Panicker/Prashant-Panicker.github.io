@@ -174,13 +174,13 @@
 
       <section>
         <h2>Summary</h2>
-        <p>Software engineer with 4 years of experience building healthcare applications with C#, ASP.NET Core, Angular, SQL Server and Azure. Work includes APIs, background jobs and legacy modernization. Improved a provider data pipeline to process 5GB files in 5 to 10 minutes.</p>
+        <p>Software engineer with 4 years of experience building healthcare applications with C#, ASP.NET Core, Angular, SQL Server and Azure. Built APIs and background jobs, and modernized legacy applications. Improved a provider data pipeline to process 5GB files in 5 to 10 minutes.</p>
       </section>
 
       <section>
         <h2>Skills</h2>
         <div class="skills">
-          <strong>Core Skills</strong><span>C#, .NET, ASP.NET Core, Angular, SQL Server, REST APIs, EF Core, Azure Container Instances (ACI), Blob Storage, Storage Queues, Service Bus, Event Hubs, xUnit, CI/CD, Azure DevOps, GitHub Actions</span>
+          <strong>Core Skills</strong><span>C#, .NET, ASP.NET Core, Angular, SQL Server, REST APIs, EF Core, Azure Container Instances (ACI), Azure Functions, Blob Storage, Storage Queues, Service Bus, Event Hubs, xUnit, CI/CD, Azure DevOps, GitHub Actions</span>
           <strong>Familiar With</strong><span>React, Python, AWS, PostgreSQL, Docker, Terraform, Azure AI Search, Azure AI Foundry, RAG</span>
         </div>
       </section>
@@ -192,7 +192,7 @@
           <div class="company">Optum Global Solutions | Hyderabad, India</div>
           <ul>
             <li>Build features for a healthcare platform using a React portal, ASP.NET Core APIs, background workers, and AWS services.</li>
-            <li>Handle features from technical analysis through UI and API changes, worker processing, testing, and release support.</li>
+            <li>Develop features from technical analysis through implementation, testing and release support.</li>
             <li>Move longer tasks to background workers to keep API requests responsive.</li>
             <li>Write xUnit tests for APIs, services, and workers, including edge cases and failures.</li>
           </ul>
@@ -205,8 +205,9 @@
             <li>Modernized 5 healthcare applications with ASP.NET Core APIs and Angular or React interfaces, supporting more than 1,000 concurrent internal users.</li>
             <li>Improved a .NET 10 and SQL Server job to process 5GB provider files in 5 to 10 minutes using chunked loads, staging tables, set based SQL, parallel steps and retries.</li>
             <li>Built ASP.NET Core APIs and React features for a digital health platform serving approximately 5,000 users.</li>
-            <li>Used Azure Storage Queues for ETL task messages and Service Bus queues for communication between APIs and background services, with SQL Server hosted on Azure.</li>
-            <li>Secured APIs with Azure AD, JWT and role based authorization. Automated delivery with 3 Azure DevOps pipelines and 2 GitHub Actions workflows.</li>
+            <li>Built ETL and background processing workflows using Azure Container Instances, Azure Functions, Blob Storage, queues and SQL Server.</li>
+            <li>Secured APIs with Azure AD, JWT and role based authorization.</li>
+            <li>Automated builds and deployments with 3 Azure DevOps pipelines and 2 GitHub Actions workflows.</li>
           </ul>
         </article>
 
@@ -215,7 +216,7 @@
           <div class="company">Optum Global Solutions | Hyderabad, India</div>
           <ul>
             <li>Resolved defects and support tickets across healthcare applications during the Technology Development Program.</li>
-            <li>Investigated production incidents through logs, identified root causes, and worked with the team on fixes.</li>
+            <li>Investigated production incidents using logs, identified root causes and worked with the team on fixes.</li>
             <li>Updated existing services to improve reliability and make the code easier to maintain.</li>
           </ul>
         </article>
@@ -232,7 +233,7 @@
             <li>Built a .NET 10 trading engine with separate modules for market data, strategies, risk checks and order management, plus an admin API.</li>
             <li>Persisted orders, fills and positions in PostgreSQL with EF Core migrations, and reconciled broker state after restarts.</li>
             <li>Added order rate limits, protective stops and stale data checks, with xUnit tests for concurrent submissions and failure handling.</li>
-            <li>Exposed runtime status and operator audit history through the admin API, and added paper trading and backtest workflows.</li>
+            <li>Added admin APIs for runtime status and operator audit history, alongside paper trading and backtesting.</li>
           </ul>
         </article>
 
@@ -253,7 +254,7 @@
           <ul>
             <li>Built a Python pipeline that turns trusted feedback from merged GitHub pull requests into review notes and reusable SKILL.md guidance.</li>
             <li>Separated webhook handling from review and history processing with Lambda and SQS, including retries and dead letter queues.</li>
-            <li>Used DynamoDB delivery tracking and review markers to prevent duplicate reviews when messages were retried.</li>
+            <li>Prevented duplicate reviews during retries by tracking webhook deliveries in DynamoDB and marking posted reviews.</li>
             <li>Retrieved accepted review feedback with Azure OpenAI embeddings and OpenSearch, then fetched file context from the exact commit under review.</li>
           </ul>
         </article>
